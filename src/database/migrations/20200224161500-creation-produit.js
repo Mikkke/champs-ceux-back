@@ -1,0 +1,38 @@
+module.exports = {
+  up: (queryInterface, Sequelize) => {
+    return queryInterface.createTable("produits", {
+      id: {
+        allowNull: false,
+        primaryKey: true,
+        type: Sequelize.UUID,
+        defaultValue: Sequelize.UUIDV4
+      },
+      titre: {
+        allowNull: false,
+        type: Sequelize.STRING(50)
+      },
+      prix: {
+        allowNull: false,
+        type: Sequelize.INTEGER
+      },
+
+      description: {
+        allowNull: false,
+        type: Sequelize.STRING(200)
+      },
+      created_at: {
+        allowNull: false,
+        type: Sequelize.DATE,
+        defaultValue: Sequelize.NOW
+      },
+      updated_at: {
+        allowNull: false,
+        type: Sequelize.DATE,
+        defaultValue: Sequelize.NOW
+      }
+    });
+  },
+  down: queryInterface => {
+    return queryInterface.dropTable("formations");
+  }
+};
