@@ -19,7 +19,7 @@ module.exports = [
   },
   {
     id: uuid(),
-    nom: "Pomme golden",
+    nom: "golden",
     prix: 4.5,
     quantite: 4,
     description:
@@ -30,7 +30,7 @@ module.exports = [
   },
   {
     id: uuid(),
-    nom: "Pomme golden",
+    nom: "Banane",
     prix: 4.5,
     quantite: 4,
     description:
@@ -41,7 +41,7 @@ module.exports = [
   },
   {
     id: uuid(),
-    nom: "Pomme golden",
+    nom: "Poire",
     prix: 4.5,
     quantite: 4,
     description:

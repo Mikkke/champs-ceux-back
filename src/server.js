@@ -1,8 +1,9 @@
 const express = require("express");
+const cors = require("cors");
 
 const route = require("./routes");
 const server = express();
-
+server.use("/api", cors());
 server.use("/api", route);
 
 server.listen(8080, () => {
