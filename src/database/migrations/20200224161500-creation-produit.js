@@ -7,7 +7,7 @@ module.exports = {
         type: Sequelize.UUID,
         defaultValue: Sequelize.UUIDV4
       },
-      titre: {
+      nom: {
         allowNull: false,
         type: Sequelize.STRING(50)
       },
@@ -15,8 +15,16 @@ module.exports = {
         allowNull: false,
         type: Sequelize.INTEGER
       },
+      quantite: {
+        allowNull: false,
+        type: Sequelize.INTEGER
+      },
 
       description: {
+        allowNull: false,
+        type: Sequelize.STRING(200)
+      },
+      photo: {
         allowNull: false,
         type: Sequelize.STRING(200)
       },
@@ -33,6 +41,6 @@ module.exports = {
     });
   },
   down: queryInterface => {
-    return queryInterface.dropTable("formations");
+    return queryInterface.dropTable("produits");
   }
 };

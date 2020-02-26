@@ -1,10 +1,10 @@
 const express = require("express");
 
-const app = express();
+const route = require("./routes");
+const server = express();
 
-app.use("/", (req, res) => {
-  res.send("je marche comme il faut");
-  console.log("je marche");
+server.use("/api", route);
+
+server.listen(8080, () => {
+  console.log("server lancer");
 });
-
-app.listen(8080);
