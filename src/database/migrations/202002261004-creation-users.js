@@ -15,6 +15,7 @@ module.exports = {
         allowNull: false,
         type: Sequelize.STRING(50)
       },
+
       telephone: {
         allowNull: false,
         type: Sequelize.INTEGER
@@ -23,10 +24,7 @@ module.exports = {
         allowNull: false,
         type: Sequelize.STRING(50)
       },
-      role: {
-        allowNull: false,
-        type: Sequelize.BOOLEAN
-      },
+
       adresse: {
         allowNull: false,
         type: Sequelize.STRING(100)

@@ -42,14 +42,6 @@ module.exports = (sequelize, DataTypes) => {
         len: [2, 30]
       }
     },
-    role: {
-      allowNull: false,
-      type: DataTypes.STRING,
-      validate: {
-        notNull: true,
-        len: [2, 30]
-      }
-    },
     adresse: {
       allowNull: false,
       type: DataTypes.STRING,

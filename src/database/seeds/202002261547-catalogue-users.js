@@ -12,7 +12,6 @@ module.exports = [
     prenom: "Phillipe",
     telephone: "2083780083",
     email: "jean@pphillipe.com",
-    role: true,
     adresse: "123 rue de la genteli 25788 province",
     created_at: now,
     updated_at: now
@@ -23,7 +22,6 @@ module.exports = [
     prenom: "moma",
     telephone: "2083780083",
     email: "jean@pphillipe.com",
-    role: true,
     adresse: "123 rue de la genteli 25788 province",
     created_at: now,
     updated_at: now
@@ -34,7 +32,6 @@ module.exports = [
     prenom: "lescours",
     telephone: "2083780083",
     email: "jean@pphillipe.com",
-    role: false,
     adresse: "123 rue de la genteli 25788 province",
     created_at: now,
     updated_at: now
@@ -45,7 +42,6 @@ module.exports = [
     prenom: "louis",
     telephone: "2083780083",
     email: "jean@pphillipe.com",
-    role: false,
     adresse: "123 rue de la genteli 25788 province",
     created_at: now,
     updated_at: now
