@@ -47,7 +47,7 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING,
         validate: {
           notNull: true,
-          len: [2, 30]
+          len: [2, 500]
         }
       },
       createdAt: {
@@ -76,9 +76,9 @@ module.exports = (sequelize, DataTypes) => {
     }
   );
 
-  /*   Produits.associate = models => {
+  /*  Produits.associate = models => {
     Produits.belongnsTo(models.)
-  } */
+  }  */
 
   return Produits;
 };
