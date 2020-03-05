@@ -1,4 +1,4 @@
-const pick = require("lodash/pick");
+//const pick = require("lodash/pick");
 const { Produits } = require("../models");
 const uuid = require("uuid/v4");
 

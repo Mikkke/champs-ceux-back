@@ -1,5 +1,8 @@
 const { Users } = require("../models");
 const uuid = require("uuid");
+const bcrypt = require("bcrypt");
+const jwt = require("jsonwebtoken");
+const token = require("../database/config/config");
 
 const usersController = {
   recupererLesUsers: async () => {
