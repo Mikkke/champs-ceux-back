@@ -17,7 +17,7 @@ const produitsController = {
       attributes: ["nom", "prix", "quantité", "photo", "description"],
       raw: true
     });
-
+    // if !produit throw new NotFoundError
     return produit;
   },
 

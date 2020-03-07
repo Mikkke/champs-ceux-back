@@ -26,6 +26,7 @@ produitsRouter.get("/", async (request, response) => {
 }); */
 
 produitsRouter.post("/", async (request, response) => {
+  //validation
   console.log("====================================");
   //console.log(data);
   //console.log("====================================");
