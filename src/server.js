@@ -15,9 +15,9 @@ server.use("/api/photo", express.static("src/assets"));
 server.use("/api", cors());
 server.use("/api", route);
 
-server.use("api/auth", verifyToken);
+/* server.use("api/auth", verifyToken); */
 
-server.get("/api/auth", async (req, res) => {
+server.get("/api/auth", verifyToken, async (req, res) => {
   const { uuid } = req.body;
   if (uuid) {
     res.json({ message: "OK", uuid });
