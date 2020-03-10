@@ -9,7 +9,7 @@ async function verifyToken(req, res, next) {
       console.log("decodedToken", decodedToken.uid);
       req.body = {};
       console.log("req.body", req.body);
-      req.body.uuid = decodedToken.uuid;
+      req.body.uid = decodedToken.uid;
 
       return next();
     } else {

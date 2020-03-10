@@ -18,9 +18,9 @@ server.use("/api", route);
 /* server.use("api/auth", verifyToken); */
 
 server.get("/api/auth", verifyToken, async (req, res) => {
-  const { uuid } = req.body;
-  if (uuid) {
-    res.json({ message: "OK", uuid });
+  const { uid } = req.body;
+  if (uid) {
+    res.json({ message: "OK", uid });
   } else {
     res.json({ message: "NOPE" });
   }
