@@ -14,6 +14,8 @@ server.use("/api/photo", express.static("src/assets"));
 //helmet
 server.use("/api", cors());
 server.use("/api", route);
+server.use(cors());
+server.use(require("./routes/mail"));
 
 /* server.use("api/auth", verifyToken); */
 
