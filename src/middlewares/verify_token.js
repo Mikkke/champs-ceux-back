@@ -7,9 +7,10 @@ async function verifyToken(req, res, next) {
     const decodedToken = await admin.auth().verifyIdToken(idToken);
     if (decodedToken) {
       console.log("decodedToken", decodedToken.uid);
-      req.body = {};
-      console.log("req.body", req.body);
-      req.body.uid = decodedToken.uid;
+      global.user = decodedToken;
+      /* req.body = {};
+      console.log("req.body", req.body); */
+      /* req.body.uid = decodedToken.uid; */
 
       return next();
     } else {

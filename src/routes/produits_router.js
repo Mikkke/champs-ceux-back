@@ -3,7 +3,7 @@ require("express-async-errors");
 
 const {
   recupererLesProduits,
-  // recupererUnProduit,
+  recupererUnProduit,
   ajouterUnProduit
 } = require("../controllers/produits_controller");
 
@@ -18,12 +18,14 @@ produitsRouter.get("/", async (request, response) => {
   response.json(produits);
 });
 
-/* produitsRouter.get("/:id", async (request, response) => {
+produitsRouter.get("/:id", async (request, response) => {
   const { id } = request.params;
+  console.log("id :", id);
   const produits = await recupererUnProduit(id);
+  console.log("produits :", produits);
   response.status(OK);
   response.json(produits);
-}); */
+});
 
 produitsRouter.post("/", async (request, response) => {
   //validation

@@ -13,10 +13,11 @@ const produitsController = {
   },
 
   recupererUnProduit: async id => {
-    const produit = await Produits.findByPK(id, {
-      attributes: ["nom", "prix", "quantité", "photo", "description"],
+    const produit = await Produits.findByPk(id, {
+      attributes: ["nom", "prix", "quantite", "photo", "description"],
       raw: true
     });
+    console.log("produit :", produit);
     // if !produit throw new NotFoundError
     return produit;
   },
